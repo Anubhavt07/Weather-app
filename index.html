@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WeatherVue</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>WeatherVue</h1>
+      <input type="text" id="location-input" placeholder="Enter location">
+      <button id="get-weather-btn">Get Weather</button>
+    </header>
+
+    <main>
+      <section id="current-weather" class="weather-card"></section>
+      <section id="forecast" class="forecast"></section>
+      <div id="map" class="map"></div>
+    </main>
+  </div>
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
